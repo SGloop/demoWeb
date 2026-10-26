@@ -1,7 +1,7 @@
 # Project Context: Modern E-Commerce Platform
 
 ## 1. System Architecture
-* **Frontend**: React SPA powered by Vite, TypeScript, Tailwind CSS, and modular component architecture.
+* **Frontend**: React 18 SPA powered by Vite, TypeScript, Tailwind CSS, Zustand, and React Router.
 * **Backend**: Node.js & Express RESTful API with TypeScript in a layered architecture (Controllers -> Services -> Repositories/Prisma).
 * **Database**: PostgreSQL managed with Prisma ORM for relational schema integrity, migrations, and type-safe queries.
 * **Cache & Rate Limiting**: Redis for session storage, caching, and request rate limiting.
@@ -23,7 +23,7 @@
 
 ## 4. Development Phases
 * [x] **Phase 1: Foundation & Baseline** - Scaffold repository, configuration, database schema, Docker Compose, and client/server shells.
-* [ ] **Phase 2: Product Catalog & Authentication** - Database migrations, seed data, JWT auth flow, product browsing, searching, and filtering.
+* [x] **Phase 2: Product Catalog & Authentication** - Database schema, seed data, JWT auth flow (register, login, me, logout), product browsing, category filtering, search, and frontend views.
 * [ ] **Phase 3: Cart & Checkout** - Client cart management, Stripe checkout integration, and webhook fulfillment.
 * [ ] **Phase 4: Admin Management** - Admin dashboard for inventory, products, and order status updates.
 * [ ] **Phase 5: Testing & Production CI/CD** - Automated tests (Vitest, Supertest, Playwright) and GitHub Actions pipeline.
