@@ -24,6 +24,6 @@
 ## 4. Development Phases
 * [x] **Phase 1: Foundation & Baseline** - Scaffold repository, configuration, database schema, Docker Compose, and client/server shells.
 * [x] **Phase 2: Product Catalog & Authentication** - Database schema, seed data, JWT auth flow (register, login, me, logout), product browsing, category filtering, search, and frontend views.
-* [ ] **Phase 3: Cart & Checkout** - Client cart management, Stripe checkout integration, and webhook fulfillment.
+* [x] **Phase 3: Cart & Checkout** - Client shopping cart page, server-side price validation, Stripe PaymentIntent creation, Stripe Elements checkout form, webhook fulfillment, and order history views.
 * [ ] **Phase 4: Admin Management** - Admin dashboard for inventory, products, and order status updates.
 * [ ] **Phase 5: Testing & Production CI/CD** - Automated tests (Vitest, Supertest, Playwright) and GitHub Actions pipeline.

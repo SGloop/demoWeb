@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { ShoppingCart, User as UserIcon, LogOut } from 'lucide-react';
+import { ShoppingCart, LogOut, Package } from 'lucide-react';
 import { useAuthStore } from '../store/authStore';
 import { useCartStore } from '../store/cartStore';
 
@@ -42,7 +42,11 @@ export const Navbar: React.FC = () => {
           </Link>
 
           {isAuthenticated && user ? (
-            <div className="flex items-center space-x-3 text-sm">
+            <div className="flex items-center space-x-4 text-sm">
+              <Link to="/orders" className="flex items-center gap-1.5 text-gray-700 hover:text-blue-600">
+                <Package className="w-4 h-4" />
+                <span>Orders</span>
+              </Link>
               <span className="text-gray-700 font-medium">Hello, {user.name}</span>
               <button
                 onClick={handleLogout}
